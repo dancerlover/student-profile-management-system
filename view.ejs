@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: blueviolet;
+            font-size: larger;
+        }
+        table{
+            border: none;
+            /* border-radius: 18px; */
+        }
+        th{
+          text-align: center;
+          font-size:13px;
+          font-family: 'Times New Roman', Times, serif;
+          background-color: black;
+          color: white;
+          width: 160px;
+          height: 40px;
+          border-radius: 5px;
+          
+        }
+        td{
+         text-align: left;
+         font-size: 15px;
+         font-family: 'Times New Roman', Times, serif;
+         color: white;
+         background-color: darkseagreen;
+         width:160px;
+         height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <table border="1px">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Date of Birth</th>
+            <th>Father's name</th>
+            <th>mother's name</th>
+            <th>Phone Number</th>
+            <th>10th percentage</th>
+            <th>12th percentage</th>
+            <th>College Name</th>
+            <th>Department</th>
+            <th>Year</th>
+            <th>Cgpa</th>
+            <th>Languages</th>
+            <th>Project title</th>
+            <th>Project Links</th>
+            <th>Edit</th>
+        </tr>
+        <% data.forEach((index) => {%>
+            <tr>
+                <td><%=index.Fullname%></td>
+                <td><%=index.Age%></td>
+                <td><%=index.dob%></td>
+                <td><%=index.father_name%></td>
+                <td><%=index.mother_name%></td>
+                <td><%=index.phone_number%></td>
+                <td><%=index.percent10%></td>
+                <td><%=index.percent12%></td>
+                <td><%=index.college_name%></td>
+                <td><%=index.department%></td>
+                <td><%=index.year%></td>
+                <td><%=index.cgpa%></td>
+                <td><%=index.languages%></td>
+                <td><%=index.project_title%></td>
+                <td><%=index.project_links%></td>
+                <td> <a href="/edit/<%= index.Fullname %>">Edit</a></td>
+            </tr>
+        <% });%>
+    </table>
+   <!-- <a href="/">insert</a> -->
+  
+</body>
+</html>

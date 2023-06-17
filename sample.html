@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            top: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #vertical-nav
+        {
+            background-color: pink;
+            width:100%;
+            height: 50px;
+            overflow: hidden;    
+        }
+        #verti-content a
+        {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            margin-top: 14px;
+            margin-left: 60px;
+            display: block;
+            position: relative;
+            float: left;
+            font-size: 20px;       
+        }
+        #verti-content
+        {
+            float: right;
+            margin-right: 120px;
+        }
+        h1{
+            float: left;
+            margin-right: 200px;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            font-weight: 800;
+            font-size: 17px;
+        }
+        h1:hover 
+        {
+            color: blueviolet;
+        }
+        #hori-nav
+        {
+            background-color: yellow;
+            width: 250px;
+            height:717px;  
+            position: fixed;
+        }
+        #hori-nav a{
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            
+            margin: 60px;
+            text-align: center;
+           
+        }
+        #content {
+            top:30%;
+            left:50%;
+            position: absolute;
+            transform: translate(50%,50%);
+            font-size: large;
+            font-style: italic;
+            color: blueviolet;
+            transition: 1s;
+        }
+        h2:hover {
+            text-transform:uppercase;
+            transform: scale(1.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div id="vertical-nav">
+            <div id="verti-content">
+                <h1>Student Profile Management</h1>
+                <a href="/output">Student details</a>
+                <a href="/project">Project works</a>
+            </div>
+        </div>
+        <div id="hori-nav">
+            <div id="hori-content">
+                <a href="student_details.html">Sign up</a>  
+                <a href="/output">Edit</a>          
+            </div>
+        </div>
+        <div id="content">
+            <h2>Welcome</h1>
+            </div>
+        </form>
+</body>
+</html>

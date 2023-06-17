@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            top:0px;
+            margin: 0;
+        }
+        form
+        {
+            top:0px;
+            left:50px;
+            position: absolute;
+            transform: translate(45%,2%);
+        }
+        h1
+        {
+            font-size: 20px;
+            color:blueviolet;
+            text-align: center;
+        }
+        fieldset
+        {
+            background-color: darkgray;
+            width:700px;
+            float: left;
+            line-height: 3rem;
+            margin: 0  ;
+            padding:10px;
+
+        }
+        input{          
+            padding: 5px;
+            background-color: transparent;
+            border:none;
+            color: aliceblue;
+            border-bottom: 1px solid black;
+        }
+        legend{
+            font-style: italic;
+        }
+        #bu
+        {
+            border: none;
+            background-color: green;
+            padding: 10px;
+            width: 200px;
+            display: block;
+            text-align: center;
+            position: absolute;
+            transform: translate(140%,50%);
+            top:100%;
+            font-size: 20px;
+        }
+        #bu:hover 
+        {
+            background-color: crimson;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Details of Student</h1>
+    <form action="/yt" method="post">
+        <div id="personal_details">
+            <fieldset>
+                <legend>Personal details</legend>
+                <label for="">Name:</label>
+                <input type="text" id="name" name="Fullname"><br>
+                <label for="">Age:</label>
+                <input type="number" id="age" name="Age"><br>
+                <label for="">Date of birth:</label>
+                <input type="date" id="dob" name="dob"><br>
+                <label for="">Father's name:</label>
+                <input type="text" id="fn" name="father_name"><br>
+                <label for="">Mother's name:</label>
+                <input type="text" id="mn" name="mother_name"><br>
+                <label for="">Phone no:</label>
+                <input type="text" id="ph" name="phone_number">
+            </fieldset>
+        </div>
+        <div id="professional_details">
+            <fieldset>
+                <legend>Studies</legend>
+                <label for="">10th percentage</label>
+                <input type="text" id="x" name="percent10"><br>
+                <label for="">12th percentage</label>
+                <input type="text" id="xii" name="percent12"><br>
+                <label for="">College Name</label>
+                <input type="text" id="cn" name="college_name"><br>
+                <label for="">Department</label>
+                <input type="text" id="dep" name="department"><br>
+                <label for="">Year</label>
+                <input type="text" id="yr" name="year" placeholder="for eg.I,II,III"><br>
+                <label for="">Cgpa</label>
+                <input type="text" id="mark" name="cgpa" ><br>
+                <h3>Programming Languages</h3>
+                <label for="">Skillset</label>
+                <input type="text" id="pm" name="Languages" placeholder="for eg.c,c++,java" ><br>
+            </fieldset>
+        </div>
+        <div id="project_details">
+            <fieldset>
+                <legend>Projects</legend>
+                <label for="">Project Title</label>
+               <textarea name="project_title" id="pt" cols="0" rows="0"></textarea><br>
+                <label for="">Links</label>
+                <textarea name="project_links" id="li" cols="0" rows="0"></textarea>
+            </fieldset>
+        </div>
+        
+            <button id="bu">Save</button>
+    </form>
+</body>
+</html>

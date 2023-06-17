@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="/up" method="POST"> 
+        Name:<input type="text" value="<%=data[0].Fullname%>" name="name"><br>
+        Age:<input type="number" value="<%=data[0].Age%>" name="age"><br>
+        Dob:<input type="date" value="<%=data[0].dob%>" name="dob"><br>
+        father name:<input type="text" value="<%=data[0].father_name%>" name="father_name"><br>
+        mother name:<input type="text" value="<%=data[0].mother_name%>" name="mother_name"><br>
+        phone number:<input type="text" value="<%=data[0].phone_number%>" name="phone_number"><br>
+        10th percentage:<input type="text" value="<%=data[0].percent10%>" name="percent10"><br>
+        12th percentage:<input type="text" value="<%=data[0].percent12%>" name="percent12"><br>
+        college name:<input type="text" value="<%=data[0].college_name%>" name="college_name"><br>
+        Department:<input type="text" value="<%=data[0].department%>" name="department"><br>
+        Year:<input type="text" value="<%=data[0].year%>" name="year"><br>
+        cgpa:<input type="text" value="<%=data[0].cgpa%>" name="cgpa"><br>
+        Programming Languages:<input type="text" value="<%=data[0].languages%>" name="languages"><br>
+        Project title:<input type="text" value="<%=data[0].project_title%>" name="project_title"><br>
+        project links:<input type="text" value="<%=data[0].project_links%>" name="project_links"><br>
+        <button>save</button>
+        </form> 
+        <!-- <p><%=data[0].Fullname%></p> -->
+</body>
+</html>
